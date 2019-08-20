@@ -54,7 +54,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -199,8 +199,12 @@
 <dimension x1="0" y1="0" x2="37.328" y2="0" x3="18.664" y3="-5.715" textsize="1.778" layer="47"/>
 <circle x="14.8" y="61.3" radius="0.22360625" width="0.1524" layer="21"/>
 <text x="23.5" y="64.3" size="0.8128" layer="21" rot="R90">IC2</text>
-<text x="36.7" y="4.4" size="0.8128" layer="21" rot="R90">12V</text>
-<text x="24" y="4.5" size="0.8128" layer="21" rot="R90">PWM</text>
+<text x="35" y="0.3" size="0.8128" layer="21">VIN</text>
+<text x="23.3" y="0.3" size="0.8128" layer="21">PWM</text>
+<text x="26.6" y="0.3" size="0.8128" layer="21">5V</text>
+<text x="28.3" y="0.3" size="0.8128" layer="21">GND</text>
+<text x="31.2" y="0.3" size="0.8128" layer="21">TX</text>
+<text x="33.1" y="0.3" size="0.8128" layer="21">RX</text>
 </plain>
 <libraries>
 <library name="Cucchiara">
@@ -1836,20 +1840,6 @@ tantalum</description>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="BM04B-SRSS-TB(LF)(SN)">
-<smd name="P$1" x="-1.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$5" x="-2.625" y="1" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$6" x="2.625" y="1" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$3" x="0.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$4" x="1.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<wire x1="-3" y1="1.5" x2="-3" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.1524" layer="21"/>
-<wire x1="3" y1="-1" x2="3" y2="1.5" width="0.1524" layer="21"/>
-<wire x1="3" y1="1.5" x2="-3" y2="1.5" width="0.1524" layer="21"/>
-<text x="-4.5" y="3" size="1.778" layer="25">&gt;NAME</text>
-<text x="-4.5" y="-4.5" size="1.778" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="microbuilder">
@@ -1870,6 +1860,39 @@ tantalum</description>
 <smd name="2" x="-0.25" y="0.75" dx="0.25" dy="0.275" layer="1" rot="R180"/>
 <smd name="1" x="0.25" y="0.75" dx="0.25" dy="0.275" layer="1" rot="R180"/>
 <circle x="0.3" y="0.3" radius="0.14141875" width="0.1016" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="BM06B-SRSS-TB(LF)(SN)">
+<description>&lt;connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="BM06BSRSSTBLFSN">
+<description>&lt;b&gt;BM06B-SRSS-TB&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="2.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-1.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-2.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="MP1" x="-3.8" y="0.875" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<smd name="MP2" x="3.8" y="0.875" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<text x="0" y="-0.325" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.325" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4" y1="1.65" x2="4" y2="1.65" width="0.2" layer="51"/>
+<wire x1="4" y1="1.65" x2="4" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="4" y1="-1.25" x2="-4" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="-4" y1="-1.25" x2="-4" y2="1.65" width="0.2" layer="51"/>
+<wire x1="-5.4" y1="2.775" x2="5.4" y2="2.775" width="0.1" layer="51"/>
+<wire x1="5.4" y1="2.775" x2="5.4" y2="-3.425" width="0.1" layer="51"/>
+<wire x1="5.4" y1="-3.425" x2="-5.4" y2="-3.425" width="0.1" layer="51"/>
+<wire x1="-5.4" y1="-3.425" x2="-5.4" y2="2.775" width="0.1" layer="51"/>
+<wire x1="-2.95" y1="1.65" x2="2.95" y2="1.65" width="0.2" layer="21"/>
+<wire x1="-4" y1="-1.25" x2="-4" y2="-0.291" width="0.2" layer="21"/>
+<wire x1="4" y1="-1.25" x2="4" y2="-0.291" width="0.2" layer="21"/>
+<wire x1="-4" y1="-1.25" x2="-3.084" y2="-1.25" width="0.2" layer="21"/>
+<wire x1="4" y1="-1.25" x2="3.084" y2="-1.25" width="0.2" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2315,13 +2338,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.765" y="62.335" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="24.265" y="60.795" size="1.27" layer="27"/>
 </element>
-<element name="ESC" library="Braedin's Eagle Libraries" package="BM04B-SRSS-TB(LF)(SN)" value="BM04B-SRSS-TB(LF)(SN)" x="26.3" y="3.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.5" y="1.1" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="30.8" y="7.7" size="1.778" layer="27" rot="R180"/>
-</element>
-<element name="TELEM" library="Braedin's Eagle Libraries" package="BM04B-SRSS-TB(LF)(SN)" value="BM04B-SRSS-TB(LF)(SN)" x="33.6" y="3.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="35.5" y="1.1" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="38.1" y="7.7" size="1.778" layer="27" rot="R180"/>
+<element name="J2" library="BM06B-SRSS-TB(LF)(SN)" package="BM06BSRSSTBLFSN" value="BM06B-SRSS-TB(LF)(SN)" x="29.9" y="3.2" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="4.25mm" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="JST (JAPAN SOLDERLESS TERMINALS)" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="BM06B-SRSS-TB(LF)(SN)" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="25" y="4.125" size="0.8128" layer="25" rot="R180" align="center"/>
+<attribute name="RS_PART_NUMBER" value="5468782" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/5468782" x="29.9" y="3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="29.9" y="3.525" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2596,19 +2623,20 @@ design rules under a new name.</description>
 <wire x1="26.75" y1="64.25" x2="26.75" y2="61.75" width="0.1524" layer="1"/>
 <wire x1="20.5" y1="60.25" x2="20.26" y2="60.36" width="0.1524" layer="1"/>
 <wire x1="26.75" y1="64.25" x2="26.8" y2="64.45" width="0.1524" layer="1"/>
-<contactref element="ESC" pad="P$2"/>
-<contactref element="TELEM" pad="P$4"/>
-<wire x1="31.75" y1="5" x2="32" y2="4.75" width="0.1524" layer="1"/>
-<wire x1="31.75" y1="6.5" x2="31.75" y2="5" width="0.1524" layer="1"/>
-<wire x1="32" y1="4.75" x2="32.1" y2="4.725" width="0.1524" layer="1"/>
-<wire x1="26.75" y1="8.25" x2="26.75" y2="4.75" width="0.1524" layer="1"/>
 <wire x1="25.5" y1="9.5" x2="26.75" y2="8.25" width="0.1524" layer="1"/>
-<wire x1="26.75" y1="4.75" x2="26.8" y2="4.725" width="0.1524" layer="1"/>
 <wire x1="25.5" y1="9.5" x2="25.49" y2="9.48" width="0.1524" layer="1"/>
 <wire x1="25.5" y1="10.75" x2="25.5" y2="10.8204" width="0.1524" layer="16"/>
 <wire x1="25.5" y1="10.75" x2="25.4508" y2="10.75" width="0.1524" layer="1"/>
 <via x="31.75" y="6.5" extent="1-16" drill="0.0508"/>
 <via x="25.5" y="10.75" extent="1-16" drill="0.0508"/>
+<contactref element="J2" pad="3"/>
+<wire x1="29" y1="4.5" x2="29.25" y2="4.75" width="0.1524" layer="1"/>
+<wire x1="29" y1="4" x2="29" y2="4.5" width="0.1524" layer="1"/>
+<wire x1="28.75" y1="3.75" x2="29" y2="4" width="0.1524" layer="1"/>
+<wire x1="25" y1="3.75" x2="28.75" y2="3.75" width="0.1524" layer="1"/>
+<wire x1="25" y1="6.25" x2="25" y2="3.75" width="0.1524" layer="1"/>
+<wire x1="29.25" y1="4.75" x2="29.4" y2="4.85" width="0.1524" layer="1"/>
+<wire x1="25" y1="6.25" x2="24.87" y2="6.38" width="0.1524" layer="1"/>
 </signal>
 <signal name="RST">
 <contactref element="IC1" pad="40"/>
@@ -3052,17 +3080,16 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="15.875" x2="34.925" y2="16.51" width="0.1524" layer="16"/>
 <wire x1="34.925" y1="17.525" x2="34.925" y2="16.51" width="0.1524" layer="1"/>
 <wire x1="34.925" y1="17.525" x2="35.5" y2="18.1" width="0.1524" layer="1"/>
-<contactref element="ESC" pad="P$3"/>
-<wire x1="26.25" y1="4.25" x2="26" y2="4.5" width="0.1524" layer="1"/>
-<wire x1="26.25" y1="3.5" x2="26.25" y2="4.25" width="0.1524" layer="1"/>
-<wire x1="28.25" y1="5.5" x2="26.25" y2="3.5" width="0.1524" layer="16"/>
-<wire x1="32.25" y1="5.5" x2="28.25" y2="5.5" width="0.1524" layer="16"/>
-<wire x1="35" y1="8.25" x2="32.25" y2="5.5" width="0.1524" layer="16"/>
 <wire x1="35" y1="13.25" x2="35" y2="8.25" width="0.1524" layer="16"/>
 <wire x1="34.5" y1="13.25" x2="35" y2="13.25" width="0.1524" layer="16"/>
-<wire x1="26" y1="4.5" x2="25.8" y2="4.725" width="0.1524" layer="1"/>
 <wire x1="34.5" y1="13.25" x2="34.29" y2="13.335" width="0.1524" layer="16"/>
-<via x="26.25" y="3.5" extent="1-16" drill="0.0508"/>
+<contactref element="J2" pad="2"/>
+<wire x1="28" y1="5.25" x2="28.4" y2="4.85" width="0.1524" layer="1"/>
+<wire x1="28" y1="6.25" x2="28" y2="5.25" width="0.1524" layer="1"/>
+<wire x1="28.75" y1="5.5" x2="28" y2="6.25" width="0.1524" layer="16"/>
+<wire x1="32.25" y1="5.5" x2="28.75" y2="5.5" width="0.1524" layer="16"/>
+<wire x1="35" y1="8.25" x2="32.25" y2="5.5" width="0.1524" layer="16"/>
+<via x="28" y="6.25" extent="1-16" drill="0.0508"/>
 </signal>
 <signal name="N$25">
 <contactref element="Q1" pad="B"/>
@@ -3199,18 +3226,13 @@ design rules under a new name.</description>
 <wire x1="23.1648" y1="16.1544" x2="21.9456" y2="14.9352" width="0.1524" layer="1"/>
 <wire x1="23.7744" y1="16.1544" x2="23.1648" y2="16.1544" width="0.1524" layer="1"/>
 <wire x1="21.9456" y1="12.4968" x2="21.94" y2="12.37" width="0.1524" layer="1"/>
-<contactref element="ESC" pad="P$4"/>
 <wire x1="26.9644" y1="12.9644" x2="23.7744" y2="16.1544" width="0.1524" layer="1"/>
-<wire x1="25.25" y1="4.25" x2="25" y2="4.5" width="0.1524" layer="1"/>
-<wire x1="25.25" y1="3.75" x2="25.25" y2="4.25" width="0.1524" layer="1"/>
-<wire x1="26" y1="3" x2="25.25" y2="3.75" width="0.1524" layer="1"/>
-<wire x1="28" y1="3" x2="26" y2="3" width="0.1524" layer="1"/>
-<wire x1="28" y1="3.5" x2="28" y2="3" width="0.1524" layer="1"/>
-<wire x1="28.5" y1="4" x2="28" y2="3.5" width="0.1524" layer="1"/>
-<wire x1="28.5" y1="11.5" x2="28.5" y2="4" width="0.1524" layer="1"/>
-<wire x1="27" y1="13" x2="28.5" y2="11.5" width="0.1524" layer="1"/>
-<wire x1="25" y1="4.5" x2="24.8" y2="4.725" width="0.1524" layer="1"/>
+<wire x1="27" y1="13" x2="27.5" y2="12.5" width="0.1524" layer="1"/>
+<wire x1="27.5" y1="12.5" x2="28.5" y2="11.5" width="0.1524" layer="1"/>
 <wire x1="27" y1="13" x2="26.9644" y2="12.9644" width="0.1524" layer="1"/>
+<contactref element="J2" pad="1"/>
+<wire x1="27.5" y1="12.5" x2="27.5" y2="5" width="0.1524" layer="1"/>
+<wire x1="27.5" y1="5" x2="27.4" y2="4.85" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="1"/>
@@ -3310,12 +3332,15 @@ design rules under a new name.</description>
 <via x="33.0708" y="11.5824" extent="1-16" drill="0.0508"/>
 <wire x1="33.25" y1="11.5" x2="34.5" y2="10.25" width="0.1524" layer="16"/>
 <wire x1="33.25" y1="11.5" x2="33.0708" y2="11.5824" width="0.1524" layer="16"/>
-<contactref element="TELEM" pad="P$2"/>
-<wire x1="34" y1="8" x2="34" y2="4.75" width="0.1524" layer="1"/>
 <wire x1="34.5" y1="8.5" x2="34" y2="8" width="0.1524" layer="16"/>
 <wire x1="34.5" y1="10.25" x2="34.5" y2="8.5" width="0.1524" layer="16"/>
-<wire x1="34" y1="4.75" x2="34.1" y2="4.725" width="0.1524" layer="1"/>
 <via x="34" y="8" extent="1-16" drill="0.0508"/>
+<contactref element="J2" pad="5"/>
+<wire x1="31.75" y1="4.5" x2="31.4" y2="4.85" width="0.1524" layer="1"/>
+<wire x1="31.75" y1="4" x2="31.75" y2="4.5" width="0.1524" layer="1"/>
+<wire x1="32" y1="3.75" x2="31.75" y2="4" width="0.1524" layer="1"/>
+<wire x1="34" y1="3.75" x2="32" y2="3.75" width="0.1524" layer="1"/>
+<wire x1="34" y1="8" x2="34" y2="3.75" width="0.1524" layer="1"/>
 </signal>
 <signal name="D5_BUZ">
 <contactref element="IC1" pad="24"/>
@@ -3373,14 +3398,15 @@ design rules under a new name.</description>
 <wire x1="34.85" y1="8.2792" x2="33.8328" y2="9.2964" width="0.1524" layer="1"/>
 <wire x1="28.25" y1="6.75" x2="22.5" y2="6.75" width="0.1524" layer="16"/>
 <wire x1="22.5" y1="6.75" x2="22.4028" y2="6.858" width="0.1524" layer="16"/>
-<contactref element="TELEM" pad="P$1"/>
-<wire x1="35" y1="8" x2="35" y2="4.75" width="0.1524" layer="1"/>
-<wire x1="35" y1="4.75" x2="35.1" y2="4.725" width="0.1524" layer="1"/>
 <wire x1="35" y1="8" x2="34.85" y2="8" width="0.1524" layer="1"/>
 <wire x1="32.25" y1="6" x2="32.25" y2="7.25" width="0.1524" layer="16"/>
 <wire x1="29" y1="6" x2="32.25" y2="6" width="0.1524" layer="16"/>
 <wire x1="28.25" y1="6.75" x2="29" y2="6" width="0.1524" layer="16"/>
 <wire x1="32.25" y1="7.25" x2="32.3896" y2="7.2484" width="0.1524" layer="16"/>
+<contactref element="J2" pad="6"/>
+<wire x1="32.5" y1="7.25" x2="32.5" y2="5" width="0.1524" layer="1"/>
+<wire x1="32.5" y1="5" x2="32.4" y2="4.85" width="0.1524" layer="1"/>
+<wire x1="32.5" y1="7.25" x2="32.3896" y2="7.2484" width="0.1524" layer="1"/>
 </signal>
 <signal name="TX1_TO_ESC">
 <contactref element="IC1" pad="37"/>
@@ -3393,17 +3419,15 @@ design rules under a new name.</description>
 <via x="17.8308" y="18.288" extent="1-16" drill="0.0508"/>
 <wire x1="27.5" y1="13.25" x2="27.432" y2="13.25" width="0.1524" layer="1"/>
 <wire x1="27.5" y1="13" x2="29.25" y2="11.25" width="0.1524" layer="1"/>
-<wire x1="29.25" y1="3.5" x2="29.25" y2="11.25" width="0.1524" layer="1"/>
 <via x="27.5" y="13.25" extent="1-16" drill="0.0508"/>
 <wire x1="27.5" y1="13.25" x2="27.5" y2="13" width="0.1524" layer="1"/>
 <wire x1="27.5" y1="13.25" x2="21.802" y2="13.25" width="0.1524" layer="16"/>
 <wire x1="21.802" y1="13.25" x2="17.8308" y2="17.2212" width="0.1524" layer="16"/>
-<contactref element="TELEM" pad="P$3"/>
-<wire x1="32.75" y1="4.25" x2="33" y2="4.5" width="0.1524" layer="1"/>
-<wire x1="32.75" y1="3.75" x2="32.75" y2="4.25" width="0.1524" layer="1"/>
-<wire x1="32.5" y1="3.5" x2="32.75" y2="3.75" width="0.1524" layer="1"/>
-<wire x1="29.25" y1="3.5" x2="32.5" y2="3.5" width="0.1524" layer="1"/>
-<wire x1="33" y1="4.5" x2="33.1" y2="4.725" width="0.1524" layer="1"/>
+<contactref element="J2" pad="4"/>
+<wire x1="30" y1="5.25" x2="30.4" y2="4.85" width="0.1524" layer="1"/>
+<wire x1="30" y1="7" x2="30" y2="5.25" width="0.1524" layer="1"/>
+<wire x1="29.25" y1="7.75" x2="30" y2="7" width="0.1524" layer="1"/>
+<wire x1="29.25" y1="11.25" x2="29.25" y2="7.75" width="0.1524" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="HP2" pad="MOSI"/>

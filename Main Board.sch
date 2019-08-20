@@ -14289,20 +14289,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="BM04B-SRSS-TB(LF)(SN)">
-<smd name="P$1" x="-1.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$5" x="-2.625" y="1" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$6" x="2.625" y="1" dx="1.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$3" x="0.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$4" x="1.5" y="-1.525" dx="1.55" dy="0.6" layer="1" rot="R90"/>
-<wire x1="-3" y1="1.5" x2="-3" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.1524" layer="21"/>
-<wire x1="3" y1="-1" x2="3" y2="1.5" width="0.1524" layer="21"/>
-<wire x1="3" y1="1.5" x2="-3" y2="1.5" width="0.1524" layer="21"/>
-<text x="-4.5" y="3" size="1.778" layer="25">&gt;NAME</text>
-<text x="-4.5" y="-4.5" size="1.778" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="M50-3500542">
@@ -14322,18 +14308,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <pin name="NRESET" x="25.4" y="-12.7" length="middle" rot="R180"/>
 <text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="BM04B-SRSS-TB(LF)(SN)">
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-12.7" x2="5.08" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="94"/>
-<pin name="P$1" x="-12.7" y="7.62" length="middle"/>
-<pin name="P$2" x="-12.7" y="2.54" length="middle"/>
-<pin name="P$3" x="-12.7" y="-2.54" length="middle"/>
-<pin name="P$4" x="-12.7" y="-7.62" length="middle"/>
-<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14359,24 +14333,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <technology name="">
 <attribute name="SWD" value="M50-3500542" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BM04B-SRSS-TB(LF)(SN)" prefix="J" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="BM04B-SRSS-TB(LF)(SN)" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="BM04B-SRSS-TB(LF)(SN)">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -14452,6 +14408,92 @@ Environ. Sensor</text>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="BM06B-SRSS-TB(LF)(SN)">
+<description>&lt;connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="BM06BSRSSTBLFSN">
+<description>&lt;b&gt;BM06B-SRSS-TB&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="2.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-1.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-2.5" y="-1.65" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="MP1" x="-3.8" y="0.875" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<smd name="MP2" x="3.8" y="0.875" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<text x="0" y="-0.325" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.325" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4" y1="1.65" x2="4" y2="1.65" width="0.2" layer="51"/>
+<wire x1="4" y1="1.65" x2="4" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="4" y1="-1.25" x2="-4" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="-4" y1="-1.25" x2="-4" y2="1.65" width="0.2" layer="51"/>
+<wire x1="-5.4" y1="2.775" x2="5.4" y2="2.775" width="0.1" layer="51"/>
+<wire x1="5.4" y1="2.775" x2="5.4" y2="-3.425" width="0.1" layer="51"/>
+<wire x1="5.4" y1="-3.425" x2="-5.4" y2="-3.425" width="0.1" layer="51"/>
+<wire x1="-5.4" y1="-3.425" x2="-5.4" y2="2.775" width="0.1" layer="51"/>
+<wire x1="-2.95" y1="1.65" x2="2.95" y2="1.65" width="0.2" layer="21"/>
+<wire x1="-4" y1="-1.25" x2="-4" y2="-0.291" width="0.2" layer="21"/>
+<wire x1="4" y1="-1.25" x2="4" y2="-0.291" width="0.2" layer="21"/>
+<wire x1="-4" y1="-1.25" x2="-3.084" y2="-1.25" width="0.2" layer="21"/>
+<wire x1="4" y1="-1.25" x2="3.084" y2="-1.25" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BM06B-SRSS-TB(LF)(SN)">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="6" x="0" y="0" length="middle"/>
+<pin name="4" x="0" y="-2.54" length="middle"/>
+<pin name="2" x="0" y="-5.08" length="middle"/>
+<pin name="7" x="0" y="-7.62" length="middle"/>
+<pin name="5" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="3" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="1" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="8" x="20.32" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BM06B-SRSS-TB(LF)(SN)" prefix="J">
+<description>&lt;b&gt;connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/13ce/0900766b813ce45e.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BM06B-SRSS-TB(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BM06BSRSSTBLFSN">
+<connects>
+<connect gate="G$1" pin="1" pad="6"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$1" pin="3" pad="4"/>
+<connect gate="G$1" pin="4" pad="3"/>
+<connect gate="G$1" pin="5" pad="2"/>
+<connect gate="G$1" pin="6" pad="1"/>
+<connect gate="G$1" pin="7" pad="MP1"/>
+<connect gate="G$1" pin="8" pad="MP2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A" constant="no"/>
+<attribute name="HEIGHT" value="4.25mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="JST (JAPAN SOLDERLESS TERMINALS)" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="BM06B-SRSS-TB(LF)(SN)" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="5468782" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/5468782" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14554,10 +14596,8 @@ Environ. Sensor</text>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" value="0.1uf"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" value="4.7k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" value="4.7k"/>
-<part name="ESC" library="Braedin's Eagle Libraries" deviceset="BM04B-SRSS-TB(LF)(SN)" device="" value="BM04B-SRSS-TB(LF)(SN)"/>
-<part name="TELEM" library="Braedin's Eagle Libraries" deviceset="BM04B-SRSS-TB(LF)(SN)" device="" value="BM04B-SRSS-TB(LF)(SN)"/>
-<part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="J2" library="BM06B-SRSS-TB(LF)(SN)" deviceset="BM06B-SRSS-TB(LF)(SN)" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14869,19 +14909,12 @@ Environ. Sensor</text>
 <attribute name="NAME" x="630.9614" y="262.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="635.762" y="262.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="ESC" gate="G$1" x="373.38" y="109.22" smashed="yes">
-<attribute name="NAME" x="363.22" y="124.46" size="1.778" layer="95"/>
-<attribute name="VALUE" x="363.22" y="93.98" size="1.778" layer="96"/>
+<instance part="J2" gate="G$1" x="353.06" y="111.76" smashed="yes">
+<attribute name="NAME" x="369.57" y="119.38" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="369.57" y="116.84" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="TELEM" gate="G$1" x="373.38" y="58.42" smashed="yes">
-<attribute name="NAME" x="363.22" y="73.66" size="1.778" layer="95"/>
-<attribute name="VALUE" x="363.22" y="43.18" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY30" gate="GND" x="342.9" y="109.22" smashed="yes">
-<attribute name="VALUE" x="340.995" y="106.045" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY32" gate="GND" x="342.9" y="48.26" smashed="yes">
-<attribute name="VALUE" x="340.995" y="45.085" size="1.778" layer="96"/>
+<instance part="SUPPLY6" gate="GND" x="322.58" y="106.68" smashed="yes">
+<attribute name="VALUE" x="320.675" y="103.505" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15089,14 +15122,9 @@ Environ. Sensor</text>
 <junction x="571.5" y="256.54"/>
 </segment>
 <segment>
-<pinref part="ESC" gate="G$1" pin="P$2"/>
-<wire x1="360.68" y1="111.76" x2="342.9" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="SUPPLY30" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TELEM" gate="G$1" pin="P$4"/>
-<wire x1="360.68" y1="50.8" x2="342.9" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="SUPPLY32" gate="GND" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="353.06" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -15440,9 +15468,9 @@ Environ. Sensor</text>
 <junction x="64.77" y="64.77"/>
 </segment>
 <segment>
-<pinref part="ESC" gate="G$1" pin="P$3"/>
-<wire x1="360.68" y1="106.68" x2="358.14" y2="106.68" width="0.1524" layer="91"/>
-<label x="358.14" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="373.38" y1="111.76" x2="375.92" y2="111.76" width="0.1524" layer="91"/>
+<label x="375.92" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -15557,9 +15585,9 @@ Environ. Sensor</text>
 <label x="226.06" y="35.56" size="1.778" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="ESC" gate="G$1" pin="P$4"/>
-<wire x1="360.68" y1="101.6" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
-<label x="358.14" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="353.06" y1="111.76" x2="350.52" y2="111.76" width="0.1524" layer="91"/>
+<label x="350.52" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15625,9 +15653,9 @@ Environ. Sensor</text>
 <label x="226.06" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TELEM" gate="G$1" pin="P$2"/>
-<wire x1="360.68" y1="60.96" x2="358.14" y2="60.96" width="0.1524" layer="91"/>
-<label x="358.14" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="353.06" y1="106.68" x2="350.52" y2="106.68" width="0.1524" layer="91"/>
+<label x="350.52" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D5_BUZ" class="0">
@@ -15671,9 +15699,9 @@ Environ. Sensor</text>
 <label x="21.59" y="110.49" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TELEM" gate="G$1" pin="P$1"/>
-<wire x1="360.68" y1="66.04" x2="358.14" y2="66.04" width="0.1524" layer="91"/>
-<label x="358.14" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="373.38" y1="106.68" x2="375.92" y2="106.68" width="0.1524" layer="91"/>
+<label x="375.92" y="106.68" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX1_TO_ESC" class="0">
@@ -15688,9 +15716,9 @@ Environ. Sensor</text>
 <label x="226.06" y="59.69" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TELEM" gate="G$1" pin="P$3"/>
-<wire x1="360.68" y1="55.88" x2="358.14" y2="55.88" width="0.1524" layer="91"/>
-<label x="358.14" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="373.38" y1="109.22" x2="375.92" y2="109.22" width="0.1524" layer="91"/>
+<label x="375.92" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
