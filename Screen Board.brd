@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -405,10 +406,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -526,11 +531,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.101" y="11.922" size="1.27" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="29.85" y="8.62" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="U$3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="45.974" y="2.286"/>
-<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="45.974" y="26.416" rot="R90"/>
-<element name="U$5" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.032" y="26.162"/>
-<element name="HP1" library="M20-8760546" package="M20-8760546" value="M20-8760546" x="34.059" y="8.869" locked="yes">
+<element name="U$3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="45.974" y="2.286" smashed="yes"/>
+<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="45.974" y="26.416" smashed="yes" rot="R90"/>
+<element name="U$5" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.032" y="26.162" smashed="yes"/>
+<element name="HP1" library="M20-8760546" package="M20-8760546" value="M20-8760546" x="34.059" y="8.869" locked="yes" smashed="yes">
 <attribute name="MALE_HEADER" value="2X5" x="34.059" y="8.869" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.759" y="8.234" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="SW1" library="TL1105JAF250Q_1RBLK" package="TL1105JAF250Q_1RBLK" value="TL1105JAF250Q_1RBLK" x="0" y="14.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.388" y="16.256" size="1.27" layer="25" rot="R270"/>
@@ -587,6 +593,18 @@ design rules under a new name.</description>
 <wire x1="35.068" y1="6.62" x2="36.576" y2="8.128" width="0.254" layer="1"/>
 <wire x1="36.576" y1="8.128" x2="36.576" y2="9.921" width="0.254" layer="1"/>
 <wire x1="36.576" y1="9.921" x2="36.599" y2="9.944" width="0.254" layer="1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="0.508" y="27.94"/>
+<vertex x="0.508" y="1.016"/>
+<vertex x="47.244" y="1.016"/>
+<vertex x="47.244" y="27.94"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="0.508" y="1.016"/>
+<vertex x="47.244" y="1.016"/>
+<vertex x="47.244" y="27.94"/>
+<vertex x="0.508" y="27.94"/>
+</polygon>
 </signal>
 <signal name="SCK">
 <contactref element="U$1" pad="9"/>
@@ -722,6 +740,13 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="4.81144375" x2="29.19655625" y2="4.798" width="0.254" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
