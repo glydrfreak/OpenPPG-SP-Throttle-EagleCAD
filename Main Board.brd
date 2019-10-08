@@ -198,15 +198,15 @@ SP140</text>
 <dimension x1="0" y1="0" x2="37.328" y2="0" x3="18.664" y3="-5.715" textsize="1.778" layer="47"/>
 <circle x="14.8" y="61.3" radius="0.22360625" width="0.1524" layer="21"/>
 <text x="26.3" y="63.8" size="0.8128" layer="21" rot="R90">IC2</text>
-<text x="31.9" y="1.05" size="0.8128" layer="21" rot="R180">VIN</text>
-<text x="26" y="1.05" size="0.8128" layer="21" rot="R180">PWM</text>
-<text x="26.95" y="0.2" size="0.8128" layer="21" rot="R90">5V</text>
-<text x="27.9" y="0.2" size="0.8128" layer="21" rot="R90">GND</text>
-<text x="28.85" y="0.2" size="0.8128" layer="21" rot="R90">TX</text>
-<text x="29.8" y="0.2" size="0.8128" layer="21" rot="R90">RX</text>
+<text x="31.7" y="4.3" size="0.8128" layer="21" rot="R180">VIN</text>
+<text x="25.75" y="4.3" size="0.8128" layer="21" rot="R180">PWM</text>
+<text x="25.95" y="4.3" size="0.8128" layer="21" rot="R270">5V</text>
+<text x="26.85" y="4.3" size="0.8128" layer="21" rot="R270">GND</text>
+<text x="27.8" y="4.3" size="0.8128" layer="21" rot="R270">TX</text>
+<text x="28.75" y="4.3" size="0.8128" layer="21" rot="R270">RX</text>
 <circle x="20.15" y="48.6" radius="5" width="0.1524" layer="21"/>
-<hole x="24.85" y="2.75" drill="3"/>
-<hole x="30.9" y="2.75" drill="3"/>
+<hole x="24.85" y="2" drill="3"/>
+<hole x="30.85" y="2" drill="3"/>
 <text x="26.5" y="74.4" size="0.8128" layer="21" rot="R180">PCB Revision 3</text>
 </plain>
 <libraries>
